@@ -14,12 +14,13 @@ var mousedown = 'mousedown';
 
 canvas.addEventListener(mouseup, function (e) {
     mousePressed = false;
-   
+    ev.preventDefault();
 });
 
 
 
 canvas.addEventListener(mousedown, function (e) {
+    ev.preventDefault();
     if (gShape === 'draw') {
         drawLine(e.offsetX, e.offsetY, gColor, false);
     }
@@ -36,6 +37,7 @@ canvas.addEventListener(mousedown, function (e) {
 });
 
 canvas.addEventListener(mousemove, function (e) {
+    ev.preventDefault();
     gHeight += 1;
     gWidth += 1;
     if (mousePressed) {

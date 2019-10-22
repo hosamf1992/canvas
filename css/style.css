@@ -1,0 +1,21 @@
+canvas{
+    border: 1px solid #000;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: steelblue;
+}
+
+.header-container > *{
+
+    margin-left: 10px;;
+
+}
